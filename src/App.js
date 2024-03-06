@@ -40,7 +40,7 @@ function App() {
         setHomes(homes)
         console.log(homes)
 
-        const escrow = new ethers.Contract(config[network.chainId].escrow.address, RealEstate, provider)
+        const escrow = new ethers.Contract(config[network.chainId].escrow.address, Escrow, provider)
         setEscrow(escrow)
 
         window.ethereum.on('accountsChanged', async () => {
