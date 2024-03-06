@@ -48,6 +48,8 @@ function App() {
             const account = ethers.utils.getAddress(accounts[0])
             setAccount(account);
         })
+
+        
     }
     useEffect(() => {
         loadBlockchainData()
